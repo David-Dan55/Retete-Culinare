@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University Student Portal</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <h1>Student Portal</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index_en.html">English</a></li>
+        <li><a href="index_ro.html">Română</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#resources">Resources</a></li>
+        <li><a href="#study-groups">Study Groups</a></li>
+        <li><a href="#jobs">Job Board</a></li>
+        <li><a href="#feedback">Feedback</a></li>
+        <li><a href="#wellness">Wellness</a></li>
+      </ul>
+    </nav>
+    <!-- Language Toggle Button -->
+    <div class="lang-switch">
+      <button id="lang-toggle" class="small-button">Switch to Romanian</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <h2>Welcome to the Student Portal</h2>
+    <p>Your one-stop platform for everything university-related. Stay organized, find resources, and connect with fellow students.</p>
+    <a href="#features" class="cta-button">Explore Features</a>
+  </section>
+
+  <!-- Feature Overview Section -->
+  <section id="features">
+    <h2>Main Features</h2>
+    <div class="features-container">
+      <div class="feature-card">
+        <h3>Events</h3>
+        <p>Stay updated with the latest university events.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Study Groups</h3>
+        <p>Find and join study groups to collaborate with fellow students.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Resources</h3>
+        <p>Access academic resources and materials.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 University Student Portal</p>
+  </footer>
+
+  <script>
+    // JavaScript to toggle between English and Romanian versions of the page
+    const langToggleButton = document.getElementById('lang-toggle');
+    let currentLang = 'en'; // Default language is English
+
+    langToggleButton.addEventListener('click', function() {
+      if (currentLang === 'en') {
+        window.location.href = 'index_ro.html'; // Switch to Romanian version
+      } else {
+        window.location.href = 'index_en.html'; // Switch to English version
+      }
+    });
+  </script>
+
+</body>
+</html>

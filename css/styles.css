@@ -1,0 +1,101 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  /* Header */
+  header {
+    background-color: #333;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Hero Section */
+  #hero {
+    background: url('../images/hero-bg.jpg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+  }
+  
+  #hero h2 {
+    font-size: 2.5rem;
+  }
+  
+  #hero .cta-button {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+  }
+  
+  /* Features Section */
+  #features {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .features-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .feature-card {
+    background-color: white;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 25%;
+  }
+  
+  .feature-card h3 {
+    font-size: 1.5rem;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .small-button {
+    padding: 5px 10px; /* Reduce padding to make it smaller */
+    font-size: 12px;   /* Smaller font size */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    background-color: #ffffff; /* Optional: Add a background color */
+    color: rgb(0, 0, 0); /* Optional: Text color */
+    border: none;  /* Optional: Remove border */
+    cursor: pointer; /* Add a pointer on hover */
+  }
+  
+  .small-button:hover {
+    background-color: #ffffff; /* Darken background on hover */
+  }
+  
